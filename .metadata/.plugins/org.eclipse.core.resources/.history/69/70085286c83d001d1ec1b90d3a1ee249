@@ -5,7 +5,7 @@ public class Account {
 	
 	private Integer number;
 	private String holder;
-	protected Double balance;
+	private Double balance;
 	
 	public Account() {
 	}
