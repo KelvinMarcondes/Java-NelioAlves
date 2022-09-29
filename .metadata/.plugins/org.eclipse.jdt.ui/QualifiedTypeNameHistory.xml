@@ -21,4 +21,6 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="entities.OrderItem"/>
+    <fullyQualifiedTypeName name="Retangulo"/>
+    <fullyQualifiedTypeName name="RetanguloTest"/>
 </qualifiedTypeNameHistroy>
