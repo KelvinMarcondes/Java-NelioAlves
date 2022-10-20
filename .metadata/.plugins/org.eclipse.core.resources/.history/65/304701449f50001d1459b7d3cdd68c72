@@ -1,0 +1,14 @@
+package application;
+
+import entities.AccountHeranca;
+import entities.BusinessAccountHeranca;
+
+public class ProgramHeranca {
+
+	public static void main(String[] args) {
+		
+		AccountHeranca acc = new AccountHeranca(1001, "alex", 1000.0);
+		BusinessAccountHeranca bacc = new BusinessAccountHeranca(1002, "maria", 0.0, 400.0);
+	}
+
+}

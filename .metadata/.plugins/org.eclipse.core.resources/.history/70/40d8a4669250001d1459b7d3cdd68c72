@@ -1,0 +1,14 @@
+package entities;
+
+public class BusinessAccountHeranca extends AccountHeranca{
+	private Double limiteEmprestimo;
+	
+	public BusinessAccountHeranca(){
+	}
+
+	public BusinessAccountHeranca(Integer numero, String proprietario, Double saldo, Double limiteEmprestimo) {
+		super(numero, proprietario, saldo);
+		this.limiteEmprestimo = limiteEmprestimo;
+	}
+	
+}
