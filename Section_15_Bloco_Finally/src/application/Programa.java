@@ -25,14 +25,8 @@ public class Programa {
 				sc.close();
 			}
 			System.out.println("end");
-		}
-				
-		
-		
-		
-		
-		
-		
+		} 
+
 	}
 
 }
