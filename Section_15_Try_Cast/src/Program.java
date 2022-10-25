@@ -21,8 +21,6 @@ public class Program {
 			
 			System.out.println("fim");
 		sc.close();
-				
-		
 
 	}
 
