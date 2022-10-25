@@ -2,7 +2,7 @@
 			 
 			 
 			 		
-		ESSE É MODO MUITO RUIM DE FAZER ESSAS RESERVAS. NÃO RECOMENDADO.
+		SOLUÇÃO 1(MUITO RUIM): LOGICA DE VALIDAÇÃO NO PROGRAMA PRINCIPAL.
 			 
 			 
 		Problema exemplo
@@ -27,7 +27,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-import model.entities.Reserva;
+import model.entities.ReservaMuitoRuim;
 
 public class ProgramaMuitoRuim {
 
@@ -48,8 +48,9 @@ public class ProgramaMuitoRuim {
 		if(checkin.after(checkout)) {
 			System.out.println("Data invalida. Checkin precisa ser antes do checkout");
 		}
+		
 		else {
-			Reserva reserva = new Reserva(numeroQuarto, checkin, checkout);
+			ReservaMuitoRuim reserva = new ReservaMuitoRuim(numeroQuarto, checkin, checkout);
 			System.out.println("Reserva: " + reserva);
 			
 			System.out.print("Entre com a data deatualização");

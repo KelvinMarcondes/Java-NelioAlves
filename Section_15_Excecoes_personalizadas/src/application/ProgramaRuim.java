@@ -1,8 +1,9 @@
 			/*
 			 
-			 Problema exemplo
+			 
+			 SOLUÇÃO 2(RUIM): MÉTODO RETORNANDO STRING
 			
-			Fazer um programa para ler os dados de uma reserva de hotel (número do quarto, data
+		Fazer um programa para ler os dados de uma reserva de hotel (número do quarto, data
 		de entrada e data de saída) e mostrar os dados da reserva, inclusive sua duração em
 		dias. Em seguida, ler novas datas de entrada e saída, atualizar a reserva, e mostrar
 		novamente a reserva com os dados atualizados. O programa não deve aceitar dados
@@ -20,11 +21,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-import model.entities.Reserva;
+import model.entities.ReservaRuim;
 
 public class ProgramaRuim {
 
-	public static void main(String[] args) throws ParseException {
+public static void main(String[] args) throws ParseException {
 		
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
@@ -41,8 +42,9 @@ public class ProgramaRuim {
 		if(checkin.after(checkout)) {
 			System.out.println("Data invalida. Checkin precisa ser antes do checkout");
 		}
+		
 		else {
-			Reserva reserva = new Reserva(numeroQuarto, checkin, checkout);
+			ReservaRuim reserva = new ReservaRuim(numeroQuarto, checkin, checkout);
 			System.out.println("Reserva: " + reserva);
 			
 			System.out.print("Entre com a data deatualização");
@@ -50,16 +52,15 @@ public class ProgramaRuim {
 			checkin = sdf.parse(sc.next());
 			System.out.print("Data do checkout(dd/mm/yyyy): ");
 			checkout = sdf.parse(sc.next());
-			
-			reserva.atualizaDatas(checkin, checkout);
+
+			String erro = reserva.atualizaDatas(checkin, checkout);
+			if(erro != null ) {
+				System.out.println("Rrro na reserva: " + erro);
+			}
+			else {
 			System.out.println("Reserva: " + reserva);
-			
+			}
 		}
-		
-		
-		
-		
 		sc.close();
 	}
-
 }

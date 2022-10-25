@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-public class Reserva {
+public class ReservaMuitoRuim {
 	
 	private Integer numeroQuarto;
 	private Date checkin;
@@ -12,10 +12,10 @@ public class Reserva {
 	
 	public static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 	
-	public Reserva() {
+	public ReservaMuitoRuim() {
 	}
 
-	public Reserva(Integer numeroQuarto, Date checkin, Date checkout) {
+	public ReservaMuitoRuim(Integer numeroQuarto, Date checkin, Date checkout) {
 		this.numeroQuarto = numeroQuarto;
 		this.checkin = checkin;
 		this.checkout = checkout;
