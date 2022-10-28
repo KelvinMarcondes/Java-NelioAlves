@@ -7,7 +7,7 @@ public class ContaBusiness extends Conta{
 	public ContaBusiness() {
 		super();
 	}
-
+	
 	public ContaBusiness(Integer numero, String proprietario, Double saldo, Double limiteEmprestimo) {
 		super(numero, proprietario, saldo);
 		LimiteEmprestimo = limiteEmprestimo;
