@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class Program {
-    
+
     public static void main(String[] args) {
 
         String path = "E:\\Workspaces\\Workspace-IntelliJ\\CourseJAVA\\Section_17_Text_File_Scanner\\file.txt";
