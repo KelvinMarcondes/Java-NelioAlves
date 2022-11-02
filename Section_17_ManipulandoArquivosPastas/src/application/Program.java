@@ -19,7 +19,7 @@ public class Program {
         System.out.println("Enter file path: ");
         String sourceFileStr = scanner.nextLine();
 
-        File souFile = new File(sourceFileStr);
+        File sourceFile = new File(sourceFileStr);
 
 
         scanner.close();
