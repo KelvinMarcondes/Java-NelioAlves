@@ -43,8 +43,7 @@ public class Program {
 		System.out.println("Pagamento total: " + carRental.getInvoice().getTotalPayment());
 
 		scanner.close();
-		
-		
+
 	}
 
 }
